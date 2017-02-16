@@ -1,7 +1,7 @@
 #works so long as ascii encoding doesn't change
 
 def caesar(string, shift)
-	cypher =""
+	cipher =""
 	string.scan(/./) do |letter|
 		num = letter.ord
 		if num >= 65 && num <=90
@@ -9,9 +9,9 @@ def caesar(string, shift)
 		elsif num >= 97 && num <=122
 			num = (num-97 + (shift.to_i))%26 + 97
 		end
-		cypher += num.chr
+		cipher += num.chr
 	end
-	cypher
+	cipher
 end
 
 puts "Enter String:"
