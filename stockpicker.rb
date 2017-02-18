@@ -1,3 +1,4 @@
+#O(n)
 def stockpicker(days)
 	low = days[0]
 	profit = nil
