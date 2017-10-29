@@ -1,6 +1,6 @@
 #works so long as ascii encoding doesn't change
 
-def caesar(string, shift)
+def caesar(string = "", shift = 0)
 	cipher =""
 	string.scan(/./) do |letter|
 		num = letter.ord
@@ -14,8 +14,8 @@ def caesar(string, shift)
 	cipher
 end
 
-puts "Enter String:"
-input_string = gets.chomp
-puts "Enter shift factor:"
-input_shift = gets.chomp
-puts caesar(input_string,input_shift)
+# puts "Enter String:"
+# input_string = gets.chomp
+# puts "Enter shift factor:"
+# input_shift = gets.chomp
+# puts caesar(input_string,input_shift)
